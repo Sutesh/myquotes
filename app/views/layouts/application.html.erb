@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myquotes</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="container"> 
+  <div class="container">
+  <h2>List</h2>
+  
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading"><b>Author Name</b></div>
+      <div class="panel-body">Arthur C. Clarke</div>
+      <div class="panel-body">Elon Musk</div>
+      <div class="panel-body">Pablo Picasso</div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading"><b>Quote</b></div>
+      <div class="panel-body">Any sufficiently advanced technology is indistinguisable from magic.</div>
+      <div class="panel-body">With artificialintelligence, we are summoning the demon.</div>
+      <div class="panel-body">Computers are useless. They can only give you answers.</div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading"><b>Backgroup</b></div>
+      <div class="panel-body">Arthur C. Clarke</div>
+      <div class="panel-body">Now he makes electric cars.</div>
+      <div class="panel-body">Some remarkable cubist paintings he did.</div>
+    </div>
+  </div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
